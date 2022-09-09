@@ -1,6 +1,10 @@
 {
   "$schema": "./node_modules/@angular/service-worker/config/schema.json",
   "index": "/index.html",
+  "appData": {
+    "version": "4.0.0",
+    "notes": "Daten können nun auch Offline eingesehen werden."
+  },
   "assetGroups": [
     {
       "name": "app",
@@ -27,6 +31,20 @@
           "/assets/**",
           "/*.(svg|cur|jpg|jpeg|png|apng|webp|avif|gif|otf|ttf|woff|woff2)"
         ]
+      }
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "api",
+      "urls": [
+        "https://api.chucknorris.io/**"
+      ],
+      "cacheConfig": {
+        "maxSize": 1,
+        "maxAge": "5d",
+        "timeout": "3s",
+        "strategy": "freshness"
       }
     }
   ]
