@@ -8,6 +8,12 @@
   width: 200px;
 }
 
+@media (max-width: 599px) {
+  .sidenav {
+    width: 100%;
+  }
+}
+
 .sidenav .mat-toolbar {
   background: inherit;
 }

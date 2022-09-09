@@ -1,0 +1,9 @@
+<h1>{{project.name}}</h1>
+<h3>{{project.startDate}}</h3> - <h3>{{project.endDate}}</h3>
+<h3>Verantwortlich: {{project.owner}}</h3>
+<h3>Mitarbeiter:</h3>
+<ul>
+    <li *ngFor="let employee of project.details.employees">
+        {{employee.name}}
+    </li>
+</ul>
