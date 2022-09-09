@@ -1,6 +1,10 @@
 {
   "configVersion": 1,
-  "timestamp": 1662713886884,
+  "timestamp": 1662725919286,
+  "appData": {
+    "version": "4.0.0",
+    "notes": "Daten können nun auch Offline eingesehen werden."
+  },
   "index": "https://christianbertels.github.io/MaterialSample/index.html",
   "assetGroups": [
     {
@@ -62,7 +66,7 @@
         "https://christianbertels.github.io/MaterialSample/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUce.5bb881679f1db2f8.woff2",
         "https://christianbertels.github.io/MaterialSample/index.html",
         "https://christianbertels.github.io/MaterialSample/kJEhBvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oFsI.883d76c88a60913a.woff2",
-        "https://christianbertels.github.io/MaterialSample/main.0caa60b4de2729b1.js",
+        "https://christianbertels.github.io/MaterialSample/main.419e0e9266e89e3b.js",
         "https://christianbertels.github.io/MaterialSample/manifest.webmanifest",
         "https://christianbertels.github.io/MaterialSample/polyfills.45a7178ca07e32be.js",
         "https://christianbertels.github.io/MaterialSample/runtime.52c4d0edcd5ecd00.js",
@@ -90,7 +94,22 @@
       "patterns": []
     }
   ],
-  "dataGroups": [],
+  "dataGroups": [
+    {
+      "name": "api",
+      "patterns": [
+        "https:\\/\\/api\\.chucknorris\\.io\\/.*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 1,
+      "maxAge": 432000000,
+      "timeoutMs": 3000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
   "hashTable": {
     "https://christianbertels.github.io/MaterialSample/KFOlCnqEu92Fr1MmEU9fABc4AMP6lbBP.b096d30475005681.woff2": "27786db7735f04a4d59ad023fd327d2dea51ae68",
     "https://christianbertels.github.io/MaterialSample/KFOlCnqEu92Fr1MmEU9fBBc4AMP6lQ.9c2d94669eef54eb.woff2": "5d62925fdd7ed8e80f206d095ed093994f13d276",
@@ -149,9 +168,9 @@
     "https://christianbertels.github.io/MaterialSample/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
     "https://christianbertels.github.io/MaterialSample/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.00086bcac4417b9f.woff2": "70810bf33663f990fe209514831d01b65cd13fe2",
     "https://christianbertels.github.io/MaterialSample/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUce.5bb881679f1db2f8.woff2": "fe5e3340fc98a4edde8aa11658488df1c2739b19",
-    "https://christianbertels.github.io/MaterialSample/index.html": "e24c0983d724cc168b1d8047ff2344e293039a65",
+    "https://christianbertels.github.io/MaterialSample/index.html": "c8755e9813e69e72c98c1132e20c664cdaf3eb2d",
     "https://christianbertels.github.io/MaterialSample/kJEhBvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oFsI.883d76c88a60913a.woff2": "aca31391d24fafe72c3dce356318d594e20261c1",
-    "https://christianbertels.github.io/MaterialSample/main.0caa60b4de2729b1.js": "36672f8c14f8284cc09dee1f59a965526ac57159",
+    "https://christianbertels.github.io/MaterialSample/main.419e0e9266e89e3b.js": "da47d1a52aaf768465b664559dbc1e9b089de11e",
     "https://christianbertels.github.io/MaterialSample/manifest.webmanifest": "31abed7c58fb560753c5b2bfc3de50985066fefb",
     "https://christianbertels.github.io/MaterialSample/polyfills.45a7178ca07e32be.js": "2971b81a2c6bae63e0fd6836fe4a9da727612c3d",
     "https://christianbertels.github.io/MaterialSample/runtime.52c4d0edcd5ecd00.js": "04a6ac8d8dd256b87773a6e760b1c26c162c440f",
